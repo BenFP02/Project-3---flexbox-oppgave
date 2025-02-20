@@ -1,0 +1,105 @@
+@font-face {
+    font-family: big_shoulders_display;
+    src: url(./fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Lexend_deca;
+    src: url(./fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color:hsl(0, 0%, 95%);
+}
+
+.header .container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 150px;
+
+}
+
+.header .container .section{
+    padding: 50px;
+    min-height: 500px;
+    min-width: 100px;
+    max-width: 300px;
+    text-align: left;
+}
+.header .container .sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.header .container .suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.header .container .luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.header .container .section h1{
+    color:hsl(0, 0%, 95%);
+    font-family: big_shoulders_display;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 250%;
+}
+
+.header .container .section h3{
+    border: 15px solid hsl(0, 0%, 95%);
+    border-radius: 60px;
+    background-color: hsl(0, 0%, 95%);
+    width: 140px;
+    font-weight: 400;
+    font-size:90%;
+    text-align: center;
+    margin-top: 80px;
+    font-family: Lexend_deca;
+    }
+
+.header .container .section p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend_deca;
+    font-weight: 400;
+    font-size: 90%;
+    line-height:25px ;
+}
+
+
+.header .container .section img{
+    margin-bottom: 30px;
+}
+#lm_sed{
+    color: hsl(31, 77%, 52%);
+}
+
+#lm_suv{
+    color: hsl(184, 100%, 22%);
+}
+
+#lm_lux{
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width:652px) {
+    .header .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header .container .section{
+        padding: 50px;
+        min-height: 200px;
+    }
+}
